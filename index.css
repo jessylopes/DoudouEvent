@@ -1,0 +1,31 @@
+
+
+.texteimage2{
+    padding: 10% 5%;
+    width: 70%;
+}
+
+.sectiondiv1{
+    display: flex;
+}
+
+img{
+    width: 50em;
+    height: auto;
+}
+
+img #pexel{
+    height: 10%;
+    width: 20em;
+}
+
+.texteimage{
+    width: 30%;
+    padding: 0px 5% 5% 5%;
+}
+
+.sectiondiv{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}

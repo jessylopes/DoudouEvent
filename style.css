@@ -1,4 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Reenie+Beanie&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    color: #D0B49F;
+}
+
+body{
+    background-color: #F6F2F0;
+    font-family: 'Open Sans';
+    font-size: 18px;
+
+}
+
+:root{
+    --taupe: #D0B49F;
+    --cream: #F6F2F0;
+    --blush: #F3E7E4;
+    --beige: #E7D1C9;
+    --darkcream: #F1E7DD;
+}
+
+#menu {
+	background: #F1E7DD;
+	height: 50px;
+	border-radius: 0px;
+}
+#menu ul, #menu li {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none
+}
+#menu ul {
+	width: 100%;
+	/* text-align: center; */
+    /* border: solid; */
+    display: flex;
+}
+#menu li {
+	display: inline-block;
+	position: relative;
+}
+#menu a {
+	display: block;
+	line-height: 45px;
+	padding: 0 14px;
+	text-decoration: none;
+	color: #D0B49F;
+	font-size: 16px;
+}
+
+
+.navigation a:hover {
+	color: #F1E7DD !important;
+	background: #D0B49F;
+    height: 50px;
+}
+
+#menu input {
+	display: none;
+	margin: 0;
+	padding: 0;
+	height: 45px;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer
+}
+#menu label {
+	display: none;
+	line-height: 45px;
+	text-align: center;
+	position: absolute;
+	left: 35px
+}
+#menu label:before {
+	font-size: 1.6em;
+	color: #D0B49F;
+	content: "\2261"; 
+	margin-left: 20px;
+}
+
+h1,h2{
+    font-family: 'Reenie Beanie';
+}
+
+aside{
+    position: fixed;
+    top: 30%;
+    height: 70px;
+    width: 100px;
+    padding: 13px;
+    right: 0;
+    /* border: solid red 1px; */
+    font-size: 0.9em  ;
+    box-shadow:0 8px 6px rgb(0 0 0 / 30%) ;
+    color: #D0B49F;
+    background-color: #F1E7DD
+
+}
+
+footer{
+    background-color: #F1E7DD;
+    height: 6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: solid; */
+    /* width: 100%; */
+}
+
+.sns{
+    width: 20%;
+}
+
+@media screen and (max-width: 800px){
+	#menu {position:relative}
+	#menu ul {background:#F1E7DD;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none;text-align:left;}
+	#menu li {display:block;float:none;width:auto;}
+	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
+	#menu input {z-index:4}
+	#menu input:checked + label {color:#D0B49F}
+	#menu input:checked + label:before {content:"\00d7"}
+	#menu input:checked ~ ul {display:block}
 }
