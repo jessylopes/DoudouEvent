@@ -1,0 +1,48 @@
+.inputgeneral{
+    font-size: 16px;
+    text-align: center;
+    color: #F6F2F0;
+    background-color: #D0B49F ;
+    border-radius: 10px;
+    border: 50px;
+    margin-left: 250PX;
+    margin-right: 250px;
+   
+}
+
+.inputgeneral input, .inputgeneral select{
+    border: 0px;
+    color: #8a5a44;
+    padding-left: 10px;
+    padding-right: 10px; 
+
+}
+.inputgeneral input:focus{
+    border: 1px solid #F6F2F0;
+    outline: none;
+}
+
+
+#inputenvoyer{
+border-radius: 10px;
+color: #F6F2F0;
+text-align: center;
+background-color: #8a5a44;
+height: 40px;
+width: 150px;
+}
+
+.inputenvoyer{
+    text-align: center;
+}
+
+.inputenvoyer input{
+    transform: scale(1);
+    transition: transform 1000ms;
+    cursor: pointer;
+}
+
+.inputenvoyer input:hover{
+    transform: scale(1.3);
+}
+
