@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Inscription.css">
-
-
 </head>
+
 <body>
         
   <header>
@@ -25,20 +25,83 @@
       </nav>
 </header>
 
+
+        <h1> Formulaire d'inscription </h1>
+        <br> 
+        <div class="formulaire">
+        <div class="inputgeneral">
+        <br>    
+        <form method="post" action="" enctype="multipart/form-data">
+              <label for="nom">Nom</label>
+                <input type="text" id="Nom" name="Nom" required><br>
+                <br>
+                <label for="prenom">Prenom</label>
+                <input type="text" id="prenom" name="prenom"><br>
+                <br>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"><br>
+                <br>
+                <label for="telephone">Contact</label>
+                <input type="telephone" id="telephone" name="telephone"><br>
+                <br>
+                <label for="prestations">Prestations</label>
+                <select id="prestations" name="prestations">
+                    <optgroup label="prestations">
+                        <option value="fr">Les copines d'abord</option>
+                        <option value="fr">Duo mére fille</option>
+                        <option value="fr">Soins intergénérationnel</option>
+                        <option value="fr">Atelier Mocktails</option>
+                        <option value="fr">Atelier Pâtisserie</option>
+                        <option value="fr">SPA Maman Enfants</option>
+                        <option value="fr">Thalasso</option>
+                        <option value="fr">Week-end entre filles</option>
+                        <option value="fr">Initiation Yoga</option>
+
+                    </optgroup>
+                </select> <br>
+                <br>
+                <label for="people">Nombre de personne</label>
+                <select id="people" name="people">
+                    <optgroup label="nombre de personne">
+                        <option value="chiffre">1 </option>
+                        <option value="chiffre">2 </option>
+                        <option value="chiffre">3 </option>
+                        <option value="chiffre">4 </option>
+                        <option value="chiffre">5 </option>
+                        <option value="chiffre">6 </option>
+                        <option value="chiffre">7 </option>
+                        <option value="chiffre">8 </option>
+                        <option value="chiffre">7 </option>
+                        <option value="chiffre">plus de 10 </option>
+                    </optgroup>
+                </select><br>
+                <br>
+                <label for="start">Date de l'évènement</label>
+                <input type="date" id="date" name="date" value="2024-07-05" min="2024-07-05" max="2026-07-05" />
+                <br>
+                <br>
+            </div>
+<br>
+<div class="inputenvoyer">
+    <input type="submit" id="inputenvoyer" value=" Envoyer ma demande ">
+</div>
+</form>
+</div>
+
 <aside>
-  <h2>
-      Nos réseaux sociaux
-  </h2>
-
-  <a href="#"><img class="sns" src="images/facebook.svg" alt="logo facebook"></a>
-  <a href="#"></a><img class="sns" src="images/square-instagram.svg" alt="logo instagram"></a>
-  <a href="#"></a><img class="sns" src="images/square-twitter.svg" alt="logo twitter"></a>
-</aside>
-</main>
-
-<footer>
-  <h1>DoudouEvent</h1>
-<p>Juliette, Jessica, Morgane, Louisiane - Descodeuses 2024</p>
-</footer>
+    <h2>
+        Nos réseaux sociaux
+    </h2>
+  
+    <a href="#"><img class="sns" src="images/facebook.svg" alt="logo facebook"></a>
+    <a href="#"></a><img class="sns" src="images/square-instagram.svg" alt="logo instagram"></a>
+    <a href="#"></a><img class="sns" src="images/square-twitter.svg" alt="logo twitter"></a>
+  </aside>
+  
+  <footer>
+    <h1>DoudouEvent</h1>
+  <p>Juliette, Jessica, Morgane, Louisiane - Descodeuses 2024</p>
+  </footer>
 </body>
+
 </html>
